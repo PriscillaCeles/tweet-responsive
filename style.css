@@ -1,0 +1,124 @@
+:root {
+    --text:#0F1419;
+    --icon-text:#536471;
+    --border:#dadddf;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-tweet {
+    width: 100%;
+    max-width: 591px;
+    height: 161px;
+    display: flex;
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    padding: 17px 84px 19px 17px;
+    margin: auto 15px;
+}
+
+.profile-image {
+    margin-right: 12px;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.profile {
+    font-weight: 700;
+    color:  var(--text);
+    margin-right: 4px;
+}
+
+.text, .main-tweet {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.icon-verify {
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+}
+
+.text-coment {
+    color:  var(--icon-text);
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.dot {
+    color: var(--icon-text);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.main-tweet {
+    margin-bottom: 16px;
+}
+
+.text-tweet {
+    color:  var(--text);
+    font-weight: 400;
+}
+
+.add-text {
+    margin-top: 21px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--icon-text);
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    margin-right: 17px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+
+}
+
+
+@media (max-width: 600px){
+    .container-tweet {
+        padding: 10px 20px 10px 10px;
+        margin: 0 10px;
+    }
+
+    .main-tweet {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .add-text {
+        margin-top: 15px;
+    }
+
+    .metrics {
+        font-size: 12px;
+    }
+
+    .icon {
+        margin-right: 5px;
+    }
+}
